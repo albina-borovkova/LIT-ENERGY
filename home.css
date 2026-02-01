@@ -32,7 +32,7 @@
         transform: scale(1);
     }
     100% {
-        transform: scale(1.05);
+        transform: scale(1.15);
     }
 }
 
@@ -94,7 +94,7 @@
     font-family: 'Orbitron', sans-serif;
     font-size: 3.5rem;
     font-weight: 900;
-    background: linear-gradient(90deg, #ff4754, #ff6b81, #ff4754);
+    background: linear-gradient(90deg, #ff4754, #ab35fa, #ff4754);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -145,7 +145,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #ff4754, #ff2e3d);
+    background: linear-gradient(135deg, #ff4754, #dc2eff);
     color: #fff;
     border: none;
     box-shadow: 0 10px 20px rgba(255, 71, 84, 0.3);
@@ -171,12 +171,13 @@
 }
 
 .hero-stats {
+    backdrop-filter: blur(20px);
     display: flex;
     justify-content: space-between;
     max-width: 600px;
     margin-top: 40px;
     flex-wrap: wrap;
-    background: rgba(42, 42, 58, 0.5);
+    background: rgb(38, 38, 53);
     border-radius: 15px;
     padding: 20px;
     border: 1px solid rgba(255, 71, 84, 0.1);
