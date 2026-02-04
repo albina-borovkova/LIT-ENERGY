@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚔️</text></svg>">
+    <title>Частые вопросы | Dungeon Reckoning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="requirements-reviews.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-dragon"></i>
+                    <span>Dungeon Reckoning</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#features">Особенности</a></li>
+                    <li><a href="index.html#gallery">Галерея</a></li>
+                    <li><a href="index.html#requirements">Требования</a></li>
+                    <li><a href="index.html#reviews">Отзывы</a></li>
+                    <li><a href="index.html#download" class="btn-nav">Скачать</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="faq-main">
+        <section class="faq-hero">
+            <div class="container">
+                <div class="faq-hero-content">
+                    <h1 class="faq-title">Частые вопросы</h1>
+                    <p class="faq-subtitle">Здесь вы найдете ответы на самые популярные вопросы об игре</p>
+                    
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="faqSearch" placeholder="Поиск вопросов...">
+                    </div>
+                    
+                    <div class="faq-categories">
+                        <button class="category-btn active" data-category="all">Все вопросы</button>
+                        <button class="category-btn" data-category="installation">Установка</button>
+                        <button class="category-btn" data-category="gameplay">Геймплей</button>
+                        <button class="category-btn" data-category="technical">Технические</button>
+                        <button class="category-btn" data-category="account">Аккаунт</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-content">
+            <div class="container">
+                <div class="faq-container">
+                    <!-- FAQ вопросы будут добавлены здесь -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Тот же футер, что и в index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fas fa-dragon"></i>
+                        <span>Dungeon Reckoning</span>
+                    </a>
+                    <p class="footer-description">
+                        Бесплатный рогалик с процедурной генерацией, постоянной смертью 
+                        и бесконечными возможностями для исследования.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-steam"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-reddit"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#features">Особенности</a></li>
+                        <li><a href="index.html#gallery">Галерея</a></li>
+                        <li><a href="index.html#requirements">Требования</a></li>
+                        <li><a href="index.html#reviews">Отзывы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Поддержка</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html" class="active">Частые вопросы</a></li>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">Сообщить об ошибке</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Новости</h3>
+                    <p>Подпишитесь на рассылку, чтобы получать новости об обновлениях игры:</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dungeon Reckoning. Все права защищены. Все товарные знаки являются собственностью их владельцев.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Вернуться наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="faq.js" defer></script>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
