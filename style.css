@@ -14,6 +14,11 @@ body {
     overflow-x: hidden;
 }
 
+.footer-links li a.active {
+    color: #00a8cc;
+    font-weight: 500;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
