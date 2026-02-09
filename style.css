@@ -113,6 +113,7 @@ body {
 .btn-nav:hover {
     background-color: #faeeee;
     color: #fff;
+    
 }
 
 .hamburger {
@@ -314,10 +315,7 @@ body {
     }
 }
 
-/* Активная ссылка в навигации */
-.nav-menu a.active {
-    color: #ff4754 !important;
-}
+
 
 /* Анимация появления элементов */
  .gallery-item, .requirements-column {
