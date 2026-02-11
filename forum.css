@@ -318,10 +318,17 @@
 }
 
 /* Категории форума */
+.forum-categories {
+    width: 130%;
+    margin-top: 3rem;
+}
+
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .category-card {
@@ -330,10 +337,14 @@
     border-radius: 15px;
     padding: 25px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
+    height: 100%;
+    min-height: 280px;
+    justify-content: center;
 }
 
 .category-card:hover {
@@ -343,47 +354,58 @@
 }
 
 .category-icon {
-    flex-shrink: 0;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background: linear-gradient(135deg, #6a0dad 0%, #00a8cc 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .category-icon i {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: white;
 }
 
 .category-info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .category-info h3 {
     color: white;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .category-info p {
     color: #b8b8d1;
     font-size: 0.95rem;
     line-height: 1.5;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    max-width: 250px;
 }
 
 .category-stats {
     display: flex;
+    justify-content: center;
     gap: 20px;
     font-size: 0.9rem;
+    margin-top: auto;
+    flex-wrap: wrap;
 }
 
 .category-stats span {
     color: #888;
+    padding: 5px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
 }
 
 .category-stats span:first-child {
@@ -394,12 +416,41 @@
     color: #00a8cc;
 }
 
+/* Адаптивность для категорий */
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .category-card {
+        min-height: 250px;
+        padding: 20px;
+    }
+    
+    .category-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .category-icon i {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 
 .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    margin-left: 6rem;
     margin-top: 50px;
 }
 
@@ -415,6 +466,7 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    margin-right: 3rem;
 }
 
 .view-all:hover {
